@@ -1,0 +1,38 @@
+{
+  "name": "greendot/questbundle",
+  "description": "Quest bundle used a developed by Greendot",
+  "type": "symfony-bundle",
+  "license" : "MIT",
+  "authors": [
+    {
+      "name": "Štěpán Šípal",
+      "email" : "stepan@greendot.cz"
+    },
+    {
+      "name": "Matyáš Přibyl",
+      "email" : "matyas@greendot.cz"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Greendot\\QuestBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Greendot\\QuestBundle\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "symfony/dependency-injection": "^7.0",
+    "doctrine/doctrine-bundle": "^2.12",
+    "doctrine/orm": "^3.1",
+    "symfony/serializer": "^7.0",
+    "gedmo/doctrine-extensions": "*"
+  },
+  "require-dev": {
+    "symfony/http-kernel": "^7.0",
+    "phpunit/phpunit": "^11.0"
+  }
+}
